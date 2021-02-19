@@ -1,0 +1,59 @@
+.techs-section {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.techs-cards-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+
+.techs-title h3 {
+  color: #003d53;
+  text-transform: uppercase;
+  animation: fade-in 1s ease;
+}
+
+.techs-title span {
+  opacity: 0.3;
+}
+
+.techs-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.5);
+  animation: slide-down 1s 0.3s ease both;
+}
+
+.techs-card img {
+  transform: scale(0.65);
+  opacity: 0.75;
+  filter: grayscale(100%);
+  filter: brightness(0%);
+}
+
+.techs-card img:hover {
+  opacity: 1;
+}
+
+.techs-card p {
+  letter-spacing: 1.2px;
+  color: #262626;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  text-transform: uppercase;
+}

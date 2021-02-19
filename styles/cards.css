@@ -1,0 +1,91 @@
+.cards-section {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section .cards-section h4 {
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin: 0 8px;
+  width: 360px;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0 15px 5px -10px rgba(50, 50, 50, 0.3);
+}
+
+.card p {
+  text-align: center;
+  margin-top: 0;
+}
+
+.card-tech {
+  animation: slide-in 1s ease;
+}
+
+.card-responsive {
+  animation: slide-in 1s 0.2s ease both;
+}
+
+.card-intuitive {
+  animation: slide-in 1s 0.4s ease both;
+}
+
+.card-icon {
+  color: white;
+}
+
+.techs-icon {
+  width: 50px;
+}
+
+.responsive-icon {
+  width: 28px;
+}
+
+.intuitive-icon {
+  width: 50px;
+}
+
+.hexagon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 57.735px;
+  background: #003d53;
+  position: relative;
+  z-index: -2;
+}
+.hexagon::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid #003d53;
+}
+.hexagon::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid #003d53;
+}
